@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='./css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='./js/bootstrap.min.js')}}">
+    <!-- <script type="text/javascript" src="{{url_for('static', filename='./script/script.js')}}">  -->
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="alert alert-success" role="alert">
+        <h4 class="alert-heading">World Bank Development Indicators</h4>
+        <p>Get World Bank Develoment Indicators Data Easily</p>
+        <hr>
+        <p class="mb-0">Just a simple click on the data variable and it will be downloaded to your gadget</p>
+    </div>
+
+
+    <form action="getData" method="post">
+        <input type="text" name="ticker">
+        <input type="submit" value="submit">
+    </form>
+
+    <!-- <ul class="list-group" text-center  sm >
+        <li class="list-group-item">INFLATION</li>
+        <li class="list-group-item">POPULATION</li>
+        <li class="list-group-item">POPULATION GROWTH</li>
+        <li class="list-group-item">GDP GROWTH</li>
+        <li class="list-group-item">GDP PER CAPITA GROWTH</li>
+      </ul> -->
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">NAME</th>
+            <th scope="col">DESCRIPTION</th>
+            <th scope="col">START DATE</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>INFLATION</td>
+            <td>consumer prices (annual %)</td>
+            <td>FROM 1960</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>POPULATION</td>
+            <td>Total Population</td>
+            <td>FROM 1960</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>POPULATION GROWTH</td>
+            <td>Population growth (annual %)</td>
+            <td>FROM 1960</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>GDP GROWTH</td>
+            <td>GDP growth (annual %)</td>
+            <td>FROM 1960</td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>GDP PER CAPITA GROWTH</td>
+            <td>GDP growth (annual %)</td>
+            <td>FROM 1960</td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>FOREIGN DIRECT INVESTMENT</td>
+            <td>Net Inflows (BoP, current US$)</td>
+            <td>FROM 1960</td>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td>REAL GDP</td>
+            <td>GDP (constant 2015 US$)</td>
+            <td>FROM 1960</td>
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td>NORMINAL GDP</td>
+            <td>GDP (current US$)</td>
+            <td>FROM 1960</td>
+          </tr>
+          <tr>
+            <th scope="row">9</th>
+            <td>HUMAN DEVELOPMENT INDEX</td>
+            <td>Human development index (HDI)</td>
+            <td>FROM 1960</td>
+          </tr>
+          <tr>
+            <th scope="row">9</th>
+            <td>IMPORTS OF GOODS AND SERVICES</td>
+            <td>Imports of goods and services (% of GDP)</td>
+            <td>FROM 1960</td>
+          </tr>
+          <tr>
+            <th scope="row">10</th>
+            <td>LENDING INTEREST RATE</td>
+            <td>Lending interest rate (%)</td>
+            <td>FROM 1960</td>
+          </tr>
+        </tbody>
+
+      </table>
+</body>
+</html>
